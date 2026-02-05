@@ -1,0 +1,244 @@
+{
+  "id": "longbow_rush_castle_timing_english_valdy_2026",
+  "title": "Longbow Rush Into Age 3 Timing (2026)",
+  "difficulty": "intermediate",
+  "archetype": "hybrid",
+  "civilizations": ["english"],
+  "map_types": ["open"],
+  "overview": "Modern Season 12 hybrid build: Start with aggressive Longbow pressure, then transition into Castle Age timing with White Tower or King's Palace based on game state.",
+  "source": {
+    "type": "aoe4guides",
+    "url": "https://aoe4guides.com/builds/3j9fiuhUJIXVPvYmjHnP",
+    "author": "Valdemar1902",
+    "video": "https://www.youtube.com/watch?v=aRkeTDdkd4I",
+    "season": "Season 12"
+  },
+  "phases": [
+    {
+      "name": "Dark Age",
+      "time_range": [0, 244],
+      "description": "Standard Council Hall opening with gold pull timing",
+      "key_actions": [
+        {
+          "action": "6 vills to sheep, build House",
+          "timing": "0:00",
+          "villagers": {"food": 6},
+          "importance": "critical"
+        },
+        {
+          "action": "2 vills to gold, build Mining Camp",
+          "timing": "0:20",
+          "villagers": {"food": 6, "gold": 1},
+          "importance": "critical"
+        },
+        {
+          "action": "Rally new vills to sheep",
+          "timing": "1:00",
+          "villagers": {"food": 7, "gold": 2},
+          "importance": "critical"
+        },
+        {
+          "action": "When 3900 gold left in vein, pull ALL gold vills to Lumber Camp",
+          "timing": "2:10",
+          "villagers": {"food": 10, "gold": "pull to wood", "wood": 2},
+          "importance": "critical"
+        },
+        {
+          "action": "Click Council Hall with 4 food villagers",
+          "timing": "2:11",
+          "villagers": {"food": 6, "wood": 2, "builders": 4},
+          "importance": "critical"
+        }
+      ],
+      "success_criteria": [
+        "Pull gold vills to wood exactly when 3900 gold remains",
+        "Council Hall at 2:11",
+        "Smooth transition from gold to wood"
+      ],
+      "common_mistakes": [
+        {
+          "mistake": "Pulling gold vills too early or too late",
+          "consequence": "Not enough gold for Council Hall, or inefficient timing",
+          "fix": "Watch gold vein count, pull at exactly 3900 remaining"
+        }
+      ]
+    },
+    {
+      "name": "Feudal Opening",
+      "time_range": [244, 330],
+      "description": "Standard wood setup and production buildings",
+      "key_actions": [
+        {
+          "action": "Rally wood until 11",
+          "timing": "2:21",
+          "villagers": {"food": 6, "wood": "3+"},
+          "importance": "critical"
+        },
+        {
+          "action": "1 age-up villager builds Barracks (goes to food after)",
+          "timing": "3:20",
+          "villagers": {"food": 6, "wood": 5},
+          "importance": "critical"
+        },
+        {
+          "action": "Another age-up villager builds House (goes to food after)",
+          "timing": "3:35",
+          "villagers": {"food": 6, "wood": 6},
+          "importance": "critical"
+        },
+        {
+          "action": "All age-up vills back to sheep after Council Hall",
+          "timing": "ongoing",
+          "importance": "important"
+        }
+      ],
+      "success_criteria": [
+        "Barracks at 3:20",
+        "House at 3:35",
+        "11 wood villagers for production"
+      ],
+      "common_mistakes": [
+        {
+          "mistake": "Not sending age-up vills back to food",
+          "consequence": "Lost villager production",
+          "fix": "Immediately send to sheep after building"
+        }
+      ]
+    },
+    {
+      "name": "Feudal Pressure",
+      "time_range": [330, 600],
+      "description": "Aggression while setting up for Castle transition",
+      "key_actions": [
+        {
+          "action": "Queue Longbows + Spears, send forward at 5 Longbows + 2-3 Spears",
+          "timing": "4:00",
+          "villagers": {"food": 10, "wood": 8},
+          "importance": "critical"
+        },
+        {
+          "action": "1 villager to food, then rally gold until 5",
+          "timing": "5:40",
+          "villagers": {"food": 11, "wood": 11, "gold": "+"},
+          "importance": "important"
+        },
+        {
+          "action": "Use deer when map control > farms",
+          "timing": "ongoing",
+          "importance": "important"
+        }
+      ],
+      "success_criteria": [
+        "5 Longbows + 2-3 Spears by 4:30",
+        "Forward pressure established",
+        "5 gold villagers for Castle transition"
+      ],
+      "common_mistakes": [
+        {
+          "mistake": "No gold villagers for Castle transition",
+          "consequence": "Delayed Castle Age",
+          "fix": "Rally to gold at 5:40"
+        }
+      ]
+    },
+    {
+      "name": "Castle Transition Decision",
+      "time_range": [600, 720],
+      "description": "Decide on landmark based on game state",
+      "key_actions": [
+        {
+          "action": "Stop producing units at min 10-11",
+          "timing": "10:00-11:00",
+          "importance": "critical"
+        },
+        {
+          "action": "Age up with White Tower for knights + resource secure",
+          "timing": "when ready",
+          "condition": "if you have map control",
+          "importance": "situational"
+        },
+        {
+          "action": "Age up with King's Palace for scaling",
+          "timing": "when ready",
+          "condition": "if you need long-term economy",
+          "importance": "situational"
+        }
+      ],
+      "success_criteria": [
+        "Castle Age by 11-12 min",
+        "Appropriate landmark choice for game state"
+      ],
+      "common_mistakes": [
+        {
+          "mistake": "Continuing unit production too long",
+          "consequence": "Delayed Castle Age, fall behind",
+          "fix": "Stop production at 10-11 min"
+        }
+      ]
+    }
+  ],
+  "benchmarks": {
+    "feudal_age": 244,
+    "council_hall": 244,
+    "barracks": 200,
+    "forward_push": 270,
+    "castle_age_stop_production": 600,
+    "castle_age_complete": 720
+  },
+  "decision_points": [
+    {
+      "trigger": "minute_10_assessment",
+      "question": "White Tower or King's Palace?",
+      "options": [
+        {
+          "choice": "White Tower",
+          "when": "good map control, want knight power spike",
+          "risk": "low"
+        },
+        {
+          "choice": "King's Palace",
+          "when": "need long-term scaling, opponent also booming",
+          "risk": "low"
+        }
+      ]
+    },
+    {
+      "trigger": "opponent_2tc_detected",
+      "question": "Continue pressure or fast Castle?",
+      "options": [
+        {
+          "choice": "All-in with rams",
+          "when": "you have big army advantage",
+          "risk": "medium"
+        },
+        {
+          "choice": "Transition to Castle",
+          "when": "they defended well",
+          "risk": "low"
+        }
+      ]
+    }
+  ],
+  "counters": {
+    "strong_against": ["fast castle without defense", "greedy builds"],
+    "weak_against": ["heavy feudal all-in", "early towers"],
+    "adaptations": [
+      {
+        "situation": "vs heavy feudal all-in",
+        "adaptation": "More spears, defensive positioning, maybe Abbey instead of Council Hall"
+      }
+    ]
+  },
+  "key_insights": [
+    "Modern S12 hybrid: aggression + scaling",
+    "Key timing: pull gold vills at 3900 gold remaining for optimal transition",
+    "Stop unit production at 10-11 min for Castle timing",
+    "Landmark choice based on game state: White Tower (aggression) vs King's Palace (economy)",
+    "This build gives flexibility - can commit or transition based on opponent"
+  ],
+  "_meta": {
+    "extracted_at": "2026-02-04T18:05:00",
+    "version": "1.0",
+    "source_api": "aoe4guides.com"
+  }
+}

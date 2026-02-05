@@ -30,4 +30,6 @@ rubric_library/*.json
 !rubric_library/stable_king_opener_english_valdy.json
 !rubric_library/2tc_standard_english_valdy.json
 !rubric_library/longbow_rush_standard_english_valdy.json
+!rubric_library/2tc_white_tower_english_valdy_2026.json
+!rubric_library/longbow_rush_castle_timing_english_valdy_2026.json
 *.log

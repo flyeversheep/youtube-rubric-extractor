@@ -1,0 +1,224 @@
+{
+  "id": "2tc_white_tower_english_valdy_2026",
+  "title": "2TC White Tower (2026)",
+  "difficulty": "intermediate",
+  "archetype": "economic_feudal",
+  "civilizations": ["english"],
+  "map_types": ["any"],
+  "overview": "Modern Season 12 2TC build transitioning into White Tower for knight production and late game scaling. Focuses on fast Castle Age after securing economic lead from 2TC.",
+  "source": {
+    "type": "aoe4guides",
+    "url": "https://aoe4guides.com/builds/ZucKx4RGJveHStNgNuxG",
+    "author": "Valdemar1902",
+    "video": "https://www.youtube.com/watch?v=aRkeTDdkd4I",
+    "season": "Season 12"
+  },
+  "phases": [
+    {
+      "name": "Dark Age",
+      "time_range": [0, 262],
+      "description": "Standard 6/2 split with early stone for 2TC",
+      "key_actions": [
+        {
+          "action": "6 food, build House, rally 2 to gold",
+          "timing": "0:00-0:20",
+          "villagers": {"food": 6, "gold": 1},
+          "importance": "critical"
+        },
+        {
+          "action": "Rally to food until 8",
+          "timing": "1:00",
+          "villagers": {"food": 7, "gold": 2},
+          "importance": "critical"
+        },
+        {
+          "action": "Rally 1 to stone, 1 to wood (build lumber camp)",
+          "timing": "1:40-2:00",
+          "villagers": {"food": 8, "wood": 1, "stone": 1, "gold": 2},
+          "importance": "critical"
+        },
+        {
+          "action": "Rally 3 to stone",
+          "timing": "2:20",
+          "villagers": {"food": 8, "wood": 1, "stone": "2+", "gold": 2},
+          "importance": "critical"
+        },
+        {
+          "action": "Click Abbey of Kings with 3 food villagers",
+          "timing": "2:40",
+          "villagers": {"food": 4, "wood": 4, "stone": 4, "builders": 3},
+          "importance": "critical"
+        }
+      ],
+      "success_criteria": [
+        "4 stone villagers by 2:40",
+        "Abbey of Kings with 3 builders (not 4)",
+        "Good wood count for lumber camp"
+      ],
+      "common_mistakes": [
+        {
+          "mistake": "Using 4 builders on Abbey",
+          "consequence": "Slower villager production",
+          "fix": "Use only 3 builders on Abbey"
+        }
+      ]
+    },
+    {
+      "name": "Feudal Setup",
+      "time_range": [262, 340],
+      "description": "Macro wood and set up for 2nd TC",
+      "key_actions": [
+        {
+          "action": "Macro wood, rally wood until 6",
+          "timing": "2:50",
+          "villagers": {"food": 4, "wood": "4+", "stone": 4},
+          "importance": "important"
+        },
+        {
+          "action": "Age-up vills to wood, rally to food",
+          "timing": "4:22",
+          "villagers": {"food": "4+", "wood": 11, "stone": 4},
+          "importance": "critical"
+        }
+      ],
+      "success_criteria": [
+        "11 wood villagers for infrastructure",
+        "Stone ready for 2nd TC"
+      ],
+      "common_mistakes": []
+    },
+    {
+      "name": "2nd TC Drop",
+      "time_range": [340, 600],
+      "description": "Drop 2nd TC and transition for fast Castle",
+      "key_actions": [
+        {
+          "action": "Repair 2nd TC with stone villagers, rally on it",
+          "timing": "5:00",
+          "villagers": {"food": 5, "wood": 9},
+          "importance": "critical"
+        },
+        {
+          "action": "Build Mill with farms",
+          "timing": "5:20",
+          "builders": 6,
+          "importance": "critical"
+        },
+        {
+          "action": "TC done - new splits for fast Age 3, rally gold and food",
+          "timing": "6:00",
+          "villagers": {"food": 13, "wood": 4, "gold": 7},
+          "importance": "critical"
+        },
+        {
+          "action": "With 1 full mill, go to food",
+          "timing": "7:10",
+          "villagers": {"food": "19+", "gold": 9},
+          "importance": "important"
+        }
+      ],
+      "success_criteria": [
+        "2nd TC by 5:00",
+        "Mill with farms by 5:20",
+        "Fast Castle setup by 6:00"
+      ],
+      "common_mistakes": [
+        {
+          "mistake": "Not repairing TC with stone vills",
+          "consequence": "Slower TC completion",
+          "fix": "Pull stone vills to repair TC immediately"
+        }
+      ]
+    },
+    {
+      "name": "Castle Age",
+      "time_range": [600, 720],
+      "description": "White Tower timing for knights and map control",
+      "key_actions": [
+        {
+          "action": "Click White Tower with 8 food villagers",
+          "timing": "9:00",
+          "villagers": {"food": 13, "wood": 10, "gold": 9, "builders": 8},
+          "importance": "critical"
+        },
+        {
+          "action": "Prep wood for Monastery and production",
+          "timing": "9:10",
+          "villagers": {"food": 8, "wood": 10, "gold": 8},
+          "importance": "important"
+        }
+      ],
+      "success_criteria": [
+        "White Tower at 9:00",
+        "Ready for Monastery and military production"
+      ],
+      "common_mistakes": []
+    },
+    {
+      "name": "Imperial/Late Game",
+      "time_range": [720, 999],
+      "description": "Scale into late game with relics and gold control",
+      "key_actions": [
+        {
+          "action": "Monastery and more production",
+          "timing": "10:14",
+          "villagers": {"food": 16, "wood": 17, "gold": 11},
+          "importance": "important"
+        },
+        {
+          "action": "Secure mid 8K gold and relics, prep Imperial",
+          "timing": "12:00",
+          "importance": "critical"
+        }
+      ],
+      "success_criteria": [
+        "Relics secured",
+        "Map control over gold",
+        "Ready for Imperial transition"
+      ],
+      "common_mistakes": []
+    }
+  ],
+  "benchmarks": {
+    "feudal_age": 262,
+    "second_tc": 300,
+    "castle_age": 540,
+    "white_tower": 540,
+    "monastery": 614
+  },
+  "decision_points": [
+    {
+      "trigger": "opponent_aggression_detected",
+      "question": "How to defend 2TC?",
+      "options": [
+        {
+          "choice": "Pull vills to repair, delay Castle slightly",
+          "when": "under heavy pressure",
+          "risk": "low"
+        }
+      ]
+    }
+  ],
+  "counters": {
+    "strong_against": ["greedy builds", "other 2TC mirrors"],
+    "weak_against": ["heavy all-in", "fast Castle aggression"],
+    "adaptations": [
+      {
+        "situation": "vs all-in",
+        "adaptation": "Add defensive units, delay White Tower if needed"
+      }
+    ]
+  },
+  "key_insights": [
+    "Modern S12 build focusing on White Tower for knight power spike",
+    "Key difference from old 2TC: faster Castle timing, White Tower landmark",
+    "8 food villagers for White Tower (faster than other landmarks)",
+    "Monastery at 10:14 enables relic play",
+    "This build transitions better to late game than aggressive openings"
+  ],
+  "_meta": {
+    "extracted_at": "2026-02-04T18:00:00",
+    "version": "1.0",
+    "source_api": "aoe4guides.com"
+  }
+}
