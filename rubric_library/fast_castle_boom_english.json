@@ -1,0 +1,242 @@
+{
+  "id": "fast_castle_boom_english",
+  "title": "English Fast Castle Boom",
+  "difficulty": "beginner",
+  "archetype": "fast_castle_boom",
+  "civilizations": ["english", "french", "hre"],
+  "map_types": ["open", "closed"],
+  "overview": "A safe, economic-focused build that reaches Castle Age quickly and establishes multiple Town Centers for a strong late game.",
+  "phases": [
+    {
+      "name": "Dark Age",
+      "time_range": [0, 300],
+      "description": "Standard Dark Age with consistent villager production",
+      "key_actions": [
+        {
+          "action": "6 villagers to sheep",
+          "timing": "0:00-2:30",
+          "importance": "critical"
+        },
+        {
+          "action": "4 villagers to first woodline",
+          "timing": "after 6 on sheep",
+          "importance": "critical"
+        },
+        {
+          "action": "Build lumber camp",
+          "timing": "when 200 wood available",
+          "importance": "critical"
+        },
+        {
+          "action": "Mill on berries + 4 villagers",
+          "timing": "around 3:00",
+          "importance": "important"
+        },
+        {
+          "action": "Start farms with weak villagers",
+          "timing": "when berry patches deplete",
+          "importance": "important"
+        },
+        {
+          "action": "Click Feudal Age",
+          "timing": "21-22 villagers",
+          "importance": "critical"
+        }
+      ],
+      "success_criteria": [
+        "Zero TC idle time",
+        "Scout finds at least 8 sheep",
+        "Smooth transition to farms"
+      ],
+      "common_mistakes": [
+        {
+          "mistake": "Late lumber camp (after 4th wood villager)",
+          "consequence": "Wood shortage delays houses and buildings",
+          "fix": "Send 4th wood vill when you have 200 wood banked"
+        },
+        {
+          "mistake": "Forgetting houses",
+          "consequence": "Population blocked, TC idle time",
+          "fix": "Build house when pop is at 10, 18, 26"
+        },
+        {
+          "mistake": "Scout dies to enemy TC",
+          "consequence": "Lose sheep visibility, delayed age up",
+          "fix": "Keep scout on edge of enemy vision, scout at angles"
+        }
+      ]
+    },
+    {
+      "name": "Feudal Transition",
+      "time_range": [300, 420],
+      "description": "Minimal Feudal Age - only build what's necessary to reach Castle",
+      "key_actions": [
+        {
+          "action": "Build Blacksmith + Market (or stable if needed)",
+          "timing": "immediately on Feudal",
+          "importance": "critical"
+        },
+        {
+          "action": "Research wheelbarrow",
+          "timing": "if available",
+          "importance": "optional"
+        },
+        {
+          "action": "Add 2nd lumber camp",
+          "timing": "when convenient",
+          "importance": "important"
+        },
+        {
+          "action": "Click Castle Age",
+          "timing": "ASAP after buildings",
+          "importance": "critical"
+        }
+      ],
+      "success_criteria": [
+        "Minimal time in Feudal (under 2 minutes)",
+        "Both required buildings up quickly",
+        "Continue villager production"
+      ],
+      "common_mistakes": [
+        {
+          "mistake": "Making military units in Feudal",
+          "consequence": "Delays Castle Age by 30-60 seconds",
+          "fix": "Only make units if you see all-in aggression coming"
+        },
+        {
+          "mistake": "Not walling against aggressive civs",
+          "consequence": "Lose to early rush before you can age up",
+          "fix": "Use villagers to build quick palisade sections"
+        }
+      ]
+    },
+    {
+      "name": "Castle Age",
+      "time_range": [780, 1200],
+      "description": "Establish economic lead with multiple TCs",
+      "key_actions": [
+        {
+          "action": "Build 2nd TC immediately",
+          "timing": "on reaching Castle",
+          "importance": "critical"
+        },
+        {
+          "action": "Add production buildings (2 stables/archery ranges)",
+          "timing": "after 2nd TC",
+          "importance": "important"
+        },
+        {
+          "action": "Research economy upgrades",
+          "timing": "as resources allow",
+          "importance": "important"
+        },
+        {
+          "action": "Consider 3rd TC",
+          "timing": "around 10-11 minutes",
+          "importance": "optional"
+        }
+      ],
+      "success_criteria": [
+        "2nd TC before 11:00",
+        "Continuous villager production from both TCs",
+        "Reach 80+ villagers by 15 minutes"
+      ],
+      "common_mistakes": [
+        {
+          "mistake": "Delaying 2nd TC for military",
+          "consequence": "Lose economic advantage",
+          "fix": "TC first, military second - you can defend with small force"
+        },
+        {
+          "mistake": "Not adjusting villager distribution",
+          "consequence": "Resource imbalances",
+          "fix": "Move villagers to needed resources (usually gold after 2nd TC)"
+        }
+      ]
+    }
+  ],
+  "benchmarks": {
+    "feudal_age": 300,
+    "castle_age": 780,
+    "imperial_age": null,
+    "second_tc": 660,
+    "third_tc": 1020,
+    "villagers_at_10min": 42,
+    "villagers_at_castle": 35
+  },
+  "decision_points": [
+    {
+      "trigger": "opponent_early_aggression_detected",
+      "question": "How to defend while still booming?",
+      "options": [
+        {
+          "choice": "Add early stable with 1-2 knights",
+          "when": "vs melee aggression (French knights, etc.)",
+          "risk": "low"
+        },
+        {
+          "choice": "Stone wall key areas",
+          "when": "vs archer aggression or all-in",
+          "risk": "medium"
+        },
+        {
+          "choice": "Skip 3rd TC, add more production",
+          "when": "under heavy pressure",
+          "risk": "medium"
+        }
+      ]
+    },
+    {
+      "trigger": "reached_castle_first",
+      "question": "How to leverage the timing advantage?",
+      "options": [
+        {
+          "choice": "Immediate aggression with Castle units",
+          "when": "opponent still in Feudal",
+          "risk": "low"
+        },
+        {
+          "choice": "Fast 3rd TC for max economy",
+          "when": "opponent playing defensive",
+          "risk": "low"
+        }
+      ]
+    }
+  ],
+  "counters": {
+    "strong_against": [
+      "slow greedy builds",
+      "other Fast Castle without pressure"
+    ],
+    "weak_against": [
+      "early all-in aggression (French knights, English MAA)",
+      "Fast Imperial",
+      "tower rushes"
+    ],
+    "adaptations": [
+      {
+        "situation": "vs early aggression",
+        "adaptation": "Add defensive buildings, delay 3rd TC, get key upgrades"
+      },
+      {
+        "situation": "vs mirror matchup (both booming)",
+        "adaptation": "Race for Imperial, add relic control, secure trade"
+      }
+    ]
+  },
+  "key_insights": [
+    "This build is greedy but safe against most standard openings",
+    "The key is minimizing Feudal Age time - you want to be in Castle as soon as possible",
+    "English bonus of cheaper farms makes this particularly strong",
+    "Always scout opponent - if they're all-in, you must adapt",
+    "Against pressure, it's better to delay 3rd TC than lose the game"
+  ],
+  "source_url": "https://www.youtube.com/watch?v=example",
+  "video_title": "Example: English Fast Castle Guide",
+  "video_author": "Example Coach",
+  "video_duration": 900,
+  "_meta": {
+    "extracted_at": "2026-02-04T12:00:00",
+    "version": "1.0"
+  }
+}
