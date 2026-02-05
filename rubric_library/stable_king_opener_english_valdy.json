@@ -1,0 +1,234 @@
+{
+  "id": "stable_king_opener_english_valdy",
+  "title": "Stable King Opener Into Feudal Aggression (with farm transition)",
+  "difficulty": "intermediate",
+  "archetype": "aggressive_feudal",
+  "civilizations": ["english"],
+  "map_types": ["any"],
+  "overview": "This build is good for dealing with Delhi & French in particular--matchups where you need mobility. Any matchup where you will be playing long feudal and farms can pay off. Good for narrow eco vs aggro feudal civs.",
+  "source": {
+    "type": "aoe4guides",
+    "url": "https://aoe4guides.com/builds/WrAeUNS4P2VXPOoB1W8p",
+    "author": "Valdemar1902",
+    "video": "https://www.youtube.com/watch?v=DK8KDAJQxf4",
+    "season": "Season 9"
+  },
+  "phases": [
+    {
+      "name": "Dark Age",
+      "time_range": [0, 230],
+      "description": "Fast eco setup with early gold for stable production",
+      "key_actions": [
+        {
+          "action": "House with 1 villager then rally to food",
+          "timing": "0:00",
+          "villagers": {"food": 5, "gold": 0, "wood": 0},
+          "importance": "critical"
+        },
+        {
+          "action": "Rally 2 villagers to gold, build Mining Camp",
+          "timing": "0:00-0:20",
+          "villagers": {"food": 6, "gold": 2, "wood": 0},
+          "importance": "critical"
+        },
+        {
+          "action": "Rally back to food until Feudal",
+          "timing": "1:00+",
+          "villagers": {"food": 7, "gold": 2, "wood": 0},
+          "importance": "critical"
+        },
+        {
+          "action": "Click Abbey of Kings with 4 food villagers",
+          "timing": "2:10",
+          "villagers": {"food": 10, "gold": 2, "wood": 0, "builders": 4},
+          "importance": "critical"
+        }
+      ],
+      "success_criteria": [
+        "2 villagers on gold by 0:20 for stable production",
+        "10 on food, 2 on gold by age up",
+        "Abbey of Kings landmark at 2:10"
+      ],
+      "common_mistakes": [
+        {
+          "mistake": "Not sending early villagers to gold",
+          "consequence": "Cannot afford stable + horsemen production",
+          "fix": "Send 2nd and 3rd villager straight to gold"
+        },
+        {
+          "mistake": "Delaying landmark click",
+          "consequence": "Late Feudal, lose initiative",
+          "fix": "Click at 2:10 with exactly 4 builders"
+        }
+      ]
+    },
+    {
+      "name": "Feudal Transition",
+      "time_range": [230, 350],
+      "description": "Quick transition to wood while preparing stable",
+      "key_actions": [
+        {
+          "action": "Rally new vills to woodline until 11 wood",
+          "timing": "2:10+",
+          "villagers": {"food": 6, "gold": 2, "wood": "+"},
+          "importance": "critical"
+        },
+        {
+          "action": "Build Stable and produce 4-5 Horsemen",
+          "timing": "3:50",
+          "villagers": {"food": 10, "gold": 2, "wood": 5},
+          "importance": "critical"
+        }
+      ],
+      "success_criteria": [
+        "Stable up by 3:50",
+        "5+ wood villagers for continuous production",
+        "First horsemen out by 4:30"
+      ],
+      "common_mistakes": [
+        {
+          "mistake": "Not enough wood villagers",
+          "consequence": "Cannot sustain stable + houses + farms",
+          "fix": "Rally to wood immediately on Feudal, target 11 wood"
+        }
+      ]
+    },
+    {
+      "name": "Feudal Aggression",
+      "time_range": [350, 600],
+      "description": "Aggression with horsemen transitioning to farms",
+      "key_actions": [
+        {
+          "action": "Research Double Broadaxe",
+          "timing": "4:00",
+          "importance": "important"
+        },
+        {
+          "action": "Build House",
+          "timing": "4:10",
+          "importance": "critical"
+        },
+        {
+          "action": "Build Mill for Wheelbarrow (when 150g)",
+          "timing": "5:00",
+          "villagers": {"food": 9, "wood": 8, "gold": 2},
+          "importance": "important"
+        },
+        {
+          "action": "Build Barracks then Archery Range, produce Longbows + Spears",
+          "timing": "5:30",
+          "villagers": {"food": 10, "wood": 10, "gold": 2},
+          "importance": "critical"
+        },
+        {
+          "action": "Farm transition: rally vills to wood, use excess wood for farms",
+          "timing": "6:00+",
+          "villagers": {"food": 11, "wood": 11, "gold": 2},
+          "importance": "important"
+        }
+      ],
+      "success_criteria": [
+        "4-5 horsemen harassing by 5:00",
+        "Wheelbarrow researched",
+        "Barracks + Archery range producing by 6:00",
+        "Smooth farm transition as sheep deplete"
+      ],
+      "common_mistakes": [
+        {
+          "mistake": "No house at 4:10",
+          "consequence": "Population block, idle production",
+          "fix": "Build house proactively at 30/50 pop"
+        },
+        {
+          "mistake": "Too many farms too early",
+          "consequence": "Not enough wood for military buildings",
+          "fix": "Balance - only make farms with excess wood after military needs"
+        },
+        {
+          "mistake": "No berries backup when sheep run out",
+          "consequence": "Food shortage, idle TC",
+          "fix": "Send vills to nearby berries if sheep deplete before farms ready"
+        }
+      ]
+    }
+  ],
+  "benchmarks": {
+    "feudal_age": 230,
+    "castle_age": null,
+    "imperial_age": null,
+    "second_tc": null,
+    "stable_timing": 230,
+    "first_horsemen": 270,
+    "wheelbarrow": 300,
+    "military_production": 330,
+    "farm_transition_start": 360
+  },
+  "decision_points": [
+    {
+      "trigger": "opponent_wall_early",
+      "question": "How to adapt horsemen aggression?",
+      "options": [
+        {
+          "choice": "Skip extra horsemen, go fast Castle",
+          "when": "walls completed before your aggression",
+          "risk": "medium"
+        },
+        {
+          "choice": "Add siege engineering + rams",
+          "when": "opponent turtling but exposed",
+          "risk": "high"
+        }
+      ]
+    },
+    {
+      "trigger": "opponent_counter_attack",
+      "question": "How to defend while maintaining pressure?",
+      "options": [
+        {
+          "choice": "Pull back horsemen to defend",
+          "when": "your base exposed, opponent all-in",
+          "risk": "low"
+        },
+        {
+          "choice": "Trade bases (ignore their attack)",
+          "when": "you have more map control",
+          "risk": "high"
+        }
+      ]
+    }
+  ],
+  "counters": {
+    "strong_against": [
+      "Delhi (slow early game)",
+      "French (need mobility vs knights)",
+      "Greed builds without early defense"
+    ],
+    "weak_against": [
+      "Early tower rushes",
+      "Heavy Feudal all-in (English MAA)",
+      "Fast Castle with defensive landmark"
+    ],
+    "adaptations": [
+      {
+        "situation": "vs early tower rush",
+        "adaptation": "Pull 3 vills to deny tower, delay stable slightly"
+      },
+      {
+        "situation": "vs French knight opening",
+        "adaptation": "Add spears earlier, defend with horsemen + spears"
+      }
+    ]
+  },
+  "key_insights": [
+    "The early 2 gold villagers are critical - without them you can't afford stable production",
+    "This build delays farm transition slightly for earlier aggression",
+    "Abbey of Kings provides healing for sustained aggression",
+    "Wheelbarrow timing is flexible - get it when you have 150g after stable",
+    "Don't over-commit to farms - you need wood for constant military production"
+  ],
+  "_meta": {
+    "extracted_at": "2026-02-04T17:30:00",
+    "version": "1.0",
+    "source_api": "aoe4guides.com"
+  }
+}
