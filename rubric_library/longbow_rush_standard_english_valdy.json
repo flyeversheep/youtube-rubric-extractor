@@ -1,0 +1,237 @@
+{
+  "id": "longbow_rush_standard_english_valdy",
+  "title": "Longbow Rush Standard",
+  "difficulty": "beginner",
+  "archetype": "aggressive_feudal",
+  "civilizations": ["english"],
+  "map_types": ["any"],
+  "overview": "Standard Longbow Rush for an 11 min ram timing or feudal aggression with farms. Classic English aggressive opening.",
+  "source": {
+    "type": "aoe4guides",
+    "url": "https://aoe4guides.com/builds/oyUm3JIGLMqp2rxP34Qi",
+    "author": "Valdemar1902",
+    "video": "https://www.youtube.com/watch?v=DK8KDAJQxf4",
+    "season": "Season 9"
+  },
+  "phases": [
+    {
+      "name": "Dark Age",
+      "time_range": [0, 244],
+      "description": "Standard Council Hall opening with early gold",
+      "key_actions": [
+        {
+          "action": "House with 1 villager",
+          "timing": "0:00",
+          "villagers": {"food": 5},
+          "importance": "critical"
+        },
+        {
+          "action": "Rally 2 villagers to gold",
+          "timing": "0:00",
+          "importance": "critical"
+        },
+        {
+          "action": "Build Mining Camp",
+          "timing": "0:20",
+          "villagers": {"food": 6, "gold": 0},
+          "importance": "critical"
+        },
+        {
+          "action": "Rally back to food until Feudal",
+          "timing": "1:00",
+          "villagers": {"food": 7, "gold": 2},
+          "importance": "critical"
+        },
+        {
+          "action": "Click Council Hall with 4 food villagers",
+          "timing": "2:10",
+          "villagers": {"food": 10, "gold": 2, "builders": 4},
+          "importance": "critical"
+        }
+      ],
+      "success_criteria": [
+        "10 food, 2 gold by age up",
+        "Council Hall for 2x Longbow production"
+      ],
+      "common_mistakes": [
+        {
+          "mistake": "Not sending early gold villagers",
+          "consequence": "Cannot afford Council Hall + Longbows",
+          "fix": "Send 2nd and 3rd villager to gold immediately"
+        }
+      ]
+    },
+    {
+      "name": "Feudal Opening",
+      "time_range": [244, 330],
+      "description": "Get Council Hall up and start woodline",
+      "key_actions": [
+        {
+          "action": "Build Lumber Camp with 2 gold villagers",
+          "timing": "2:10",
+          "importance": "critical"
+        },
+        {
+          "action": "Rally new vills to woodline until 11",
+          "timing": "2:19",
+          "villagers": {"food": 6, "wood": "3+"},
+          "importance": "critical"
+        },
+        {
+          "action": "Build Barracks with 1 age-up villager (goes to food after)",
+          "timing": "3:25",
+          "villagers": {"food": 6, "wood": 6},
+          "importance": "critical"
+        },
+        {
+          "action": "Build House with another age-up villager (goes to food after)",
+          "timing": "4:46",
+          "villagers": {"food": 6, "wood": 7},
+          "importance": "critical"
+        }
+      ],
+      "success_criteria": [
+        "Lumber Camp at 2:10",
+        "Barracks at 3:25",
+        "House at 4:46 before supply block"
+      ],
+      "common_mistakes": [
+        {
+          "mistake": "Keeping age-up villagers on construction too long",
+          "consequence": "Lost villager production time",
+          "fix": "Send age-up vills back to food immediately after building"
+        }
+      ]
+    },
+    {
+      "name": "Feudal Aggression",
+      "time_range": [330, 660],
+      "description": "Mass Longbows with Spear support for 11 min ram timing",
+      "key_actions": [
+        {
+          "action": "Queue constant Longbows and Spears",
+          "timing": "4:04",
+          "villagers": {"food": 10, "wood": 8},
+          "importance": "critical"
+        },
+        {
+          "action": "Balance economy 11f/11w then rally 3 to gold",
+          "timing": "5:30",
+          "villagers": {"food": 11, "wood": 11, "gold": "+3"},
+          "importance": "important"
+        },
+        {
+          "action": "Rally to wood until ram timing, use deer if available",
+          "timing": "6:40",
+          "importance": "important"
+        },
+        {
+          "action": "Pull 1 villager for Outpost",
+          "timing": "7:30",
+          "villagers": {"food": 11, "wood": 13, "gold": 3},
+          "importance": "optional"
+        },
+        {
+          "action": "Build Blacksmith for +1 attack, Iron Undermesh, Siege Engineering (if rams)",
+          "timing": "7:50",
+          "villagers": {"food": 11, "wood": 14, "gold": 2},
+          "importance": "critical"
+        }
+      ],
+      "success_criteria": [
+        "5 Longbows + 2-3 Spears by 4:30",
+        "Send forward at 5 Longbows",
+        "Blacksmith upgrades for ram timing",
+        "Siege Engineering if doing ram push",
+        "Maintain 2:1 Longbow to Spear ratio"
+      ],
+      "common_mistakes": [
+        {
+          "mistake": "Not having Siege Engineering for 11 min rams",
+          "consequence": "Cannot break through walls/defenses",
+          "fix": "Get Siege Engineering by 7:50 from Blacksmith"
+        },
+        {
+          "mistake": "Too many spears, not enough longbows",
+          "consequence": "Lose damage output",
+          "fix": "Keep 2-3x Longbows to Spears ratio"
+        },
+        {
+          "mistake": "No economy upgrades",
+          "consequence": "Fall behind in eco while all-in",
+          "fix": "Get at least +1 attack, consider wheelbarrow if extended feudal"
+        }
+      ]
+    }
+  ],
+  "benchmarks": {
+    "feudal_age": 244,
+    "council_hall": 244,
+    "first_longbows": 270,
+    "barracks": 205,
+    "forward_push": 300,
+    "blacksmith": 470,
+    "ram_timing": 660
+  },
+  "decision_points": [
+    {
+      "trigger": "opponent_2tc_detected",
+      "question": "All-in or transition to Castle?",
+      "options": [
+        {
+          "choice": "All-in with rams at 11 min",
+          "when": "you have map control and production advantage",
+          "risk": "medium"
+        },
+        {
+          "choice": "Transition to Castle Age",
+          "when": "they have good defense, you need to scale",
+          "risk": "low"
+        }
+      ]
+    },
+    {
+      "trigger": "opponent_fast_castle",
+      "question": "How to punish FC?",
+      "options": [
+        {
+          "choice": "Push immediately with all units",
+          "when": "they have no defense",
+          "risk": "low"
+        },
+        {
+          "choice": "Secure map, take deer, then push",
+          "when": "they have some defense but going greedy",
+          "risk": "medium"
+        }
+      ]
+    }
+  ],
+  "counters": {
+    "strong_against": ["fast castle", "greedy eco builds", "unprepared openings"],
+    "weak_against": ["heavy feudal all-in (French knights)", "early towers", "archer civ mirror"],
+    "adaptations": [
+      {
+        "situation": "vs French knight aggression",
+        "adaptation": "More spears early, defensive positioning"
+      },
+      {
+        "situation": "vs early towers",
+        "adaptation": "Skip some longbows for rams, or go Castle"
+      }
+    ]
+  },
+  "key_insights": [
+    "Classic English aggressive opening - good for beginners to learn",
+    "Council Hall allows 2x Longbow production rate",
+    "Key is the 11 minute ram timing if opponent goes 2TC",
+    "Always maintain Longbow > Spear ratio (2:1 or 3:1)",
+ "Deer are better than farms in extended Feudal",
+    "If opponent goes FC, you can often kill them before they get value"
+  ],
+  "_meta": {
+    "extracted_at": "2026-02-04T17:38:00",
+    "version": "1.0",
+    "source_api": "aoe4guides.com"
+  }
+}

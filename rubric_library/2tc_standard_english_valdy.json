@@ -1,0 +1,188 @@
+{
+  "id": "2tc_standard_english_valdy",
+  "title": "2TC Standard (Abbey of Kings)",
+  "difficulty": "intermediate",
+  "archetype": "economic_feudal",
+  "civilizations": ["english"],
+  "map_types": ["any"],
+  "overview": "The classic 2TC build with feudal defensive units. Good against ram all-in where white tower doesn't work. Use this build against civs where Longbow Rush or Stable King Opener doesn't work.",
+  "source": {
+    "type": "aoe4guides",
+    "url": "https://aoe4guides.com/builds/6h1f95Kn675pXVo7lCg2",
+    "author": "Valdemar1902",
+    "video": "https://www.youtube.com/watch?v=DK8KDAJQxf4",
+    "season": "Season 9"
+  },
+  "phases": [
+    {
+      "name": "Dark Age",
+      "time_range": [0, 290],
+      "description": "Standard dark age with early gold for flexibility",
+      "key_actions": [
+        {
+          "action": "House with 1 villager, rally 2 to gold",
+          "timing": "0:00",
+          "villagers": {"food": 5, "gold": 0},
+          "importance": "critical"
+        },
+        {
+          "action": "Build Mining Camp, rally back to food",
+          "timing": "0:20-1:00",
+          "villagers": {"food": 7, "gold": 2},
+          "importance": "critical"
+        },
+        {
+          "action": "Click Abbey of Kings with 2 food villagers",
+          "timing": "2:10",
+          "villagers": {"food": 10, "gold": 2, "builders": 2},
+          "importance": "critical"
+        }
+      ],
+      "success_criteria": [
+        "10 food, 2 gold by age up",
+        "Abbey of Kings at 2:10 (faster than Council Hall builds)"
+      ],
+      "common_mistakes": [
+        {
+          "mistake": "Using 4 builders on Abbey (slower return to food)",
+          "consequence": "Delayed villager production",
+          "fix": "Use only 2 builders on Abbey, keep rest gathering"
+        }
+      ]
+    },
+    {
+      "name": "Feudal Transition",
+      "time_range": [290, 360],
+      "description": "Pull gold vills to stone, rally to wood",
+      "key_actions": [
+        {
+          "action": "Pull 2 gold vills to stone, rally rest to wood",
+          "timing": "2:15",
+          "villagers": {"food": 4, "wood": "4+", "stone": 3, "gold": 0},
+          "importance": "critical"
+        },
+        {
+          "action": "Rally 6 vills to straggler trees (don't build lumber camp yet)",
+          "timing": "2:40",
+          "importance": "important"
+        },
+        {
+          "action": "Rally to stone until 7 stone vills",
+          "timing": "3:00",
+          "villagers": {"food": 4, "wood": 6, "stone": "3+"},
+          "importance": "critical"
+        },
+        {
+          "action": "Move 1 landmark builder to straggler tree",
+          "timing": "4:00",
+          "villagers": {"food": 4, "wood": 7, "stone": "4+"},
+          "importance": "important"
+        }
+      ],
+      "success_criteria": [
+        "7 stone villagers by 4:00",
+        "Good wood count for 2nd TC"
+      ],
+      "common_mistakes": [
+        {
+          "mistake": "Building lumber camp too early",
+          "consequence": "Wastes wood needed for 2nd TC",
+          "fix": "Use straggler trees first, build lumber camp later"
+        }
+      ]
+    },
+    {
+      "name": "2nd TC Drop",
+      "time_range": [360, 480],
+      "description": "Drop 2nd TC and transition into mid-game",
+      "key_actions": [
+        {
+          "action": "Build 2nd TC on gold with farm space between TCs (8+ vills)",
+          "timing": "4:50",
+          "villagers": {"food": 4, "wood": 7, "stone": 7},
+          "importance": "critical"
+        },
+        {
+          "action": "Rally to food until 8, then increase wood to 15",
+          "timing": "5:05",
+          "importance": "critical"
+        },
+        {
+          "action": "Build lumber camp",
+          "timing": "5:05",
+          "importance": "critical"
+        },
+        {
+          "action": "Rally 3 vills from 2nd TC to gold",
+          "timing": "5:50",
+          "villagers": {"food": 7, "wood": 15, "gold": "+3"},
+          "importance": "important"
+        },
+        {
+          "action": "Add Archery Range + Barracks, full produce Longbows + Spears",
+          "timing": "6:00",
+          "importance": "critical"
+        }
+      ],
+      "success_criteria": [
+        "2nd TC at 4:50",
+        "15 wood villagers for infrastructure",
+        "Military production by 6:00",
+        "25+ units at minute 11 for ram defense"
+      ],
+      "common_mistakes": [
+        {
+          "mistake": "2nd TC too far from main base",
+          "consequence": "Harder to defend, villager travel time",
+          "fix": "Build on gold with farm space between TCs"
+        },
+        {
+          "mistake": "Not enough military production",
+          "consequence": "Lose to ram all-in at 11 min",
+          "fix": "Aim for 25+ units by minute 11"
+        }
+      ]
+    }
+  ],
+  "benchmarks": {
+    "feudal_age": 290,
+    "second_tc": 290,
+    "villagers_at_10min": 42,
+    "military_units_at_11min": 25
+  },
+  "decision_points": [
+    {
+      "trigger": "opponent_ram_push_detected",
+      "question": "How to defend ram all-in?",
+      "options": [
+        {
+          "choice": "Focus mass units, repair TC",
+          "when": "they commit to all-in",
+          "risk": "low"
+        }
+      ]
+    }
+  ],
+  "counters": {
+    "strong_against": ["ram all-in"],
+    "weak_against": ["fast castle", "double TC boom"],
+    "adaptations": [
+      {
+        "situation": "vs fast castle opponent",
+        "adaptation": "Push with 2 TC power spike, don't let them scale"
+      }
+    ]
+  },
+  "key_insights": [
+    "This is the defensive alternative to aggressive English openings",
+    "Abbey of Kings provides healing to sustain defense",
+    "Key is 25+ units by minute 11 to survive ram pushes",
+    "Straggler trees save wood for faster 2nd TC",
+    "Keep TCs close together for mutual defense"
+  ],
+  "_meta": {
+    "extracted_at": "2026-02-04T17:35:00",
+    "version": "1.0",
+    "source_api": "aoe4guides.com"
+  }
+}

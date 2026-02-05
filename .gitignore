@@ -28,4 +28,6 @@ Thumbs.db
 rubric_library/*.json
 !rubric_library/fast_castle_boom_english.json
 !rubric_library/stable_king_opener_english_valdy.json
+!rubric_library/2tc_standard_english_valdy.json
+!rubric_library/longbow_rush_standard_english_valdy.json
 *.log
